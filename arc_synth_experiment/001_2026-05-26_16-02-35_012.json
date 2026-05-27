@@ -1,0 +1,4 @@
+[
+{"cat" : "Session","pid" :154903,"tid" :154903,"dur" :4709,"ts" :2,"ph" : "X","name" :"model_loading_array","args" : {}},
+{"cat" : "Session","pid" :154903,"tid" :154903,"dur" :8044,"ts" :4725,"ph" : "X","name" :"session_initialization","args" : {}}
+]

@@ -1,0 +1,44 @@
+{
+  "mode": "algorithmic",
+  "task_start": 1,
+  "task_end": 400,
+  "tasks_run": 1,
+  "perfect_train_fit": 1,
+  "onnx_validated": 1,
+  "results": [
+    {
+      "task_id": "task087",
+      "best_score": 1.0,
+      "program": {
+        "op": "compose",
+        "params": {},
+        "children": [
+          {
+            "op": "mirror_x",
+            "params": {},
+            "children": []
+          },
+          {
+            "op": "mirror_y",
+            "params": {},
+            "children": []
+          }
+        ]
+      },
+      "program_description": "compose[mirror_x -> mirror_y]",
+      "method": "rule_detection",
+      "training_validation_all_pass": true,
+      "onnx_path": "/home/filip/Desktop/neuro_golf/submission/task087.onnx",
+      "onnx_validation_pass": true,
+      "onnx_exportable": true,
+      "status": "solved_and_exported",
+      "elapsed_seconds": 0.08,
+      "pair_results": [],
+      "split_pass": {
+        "train": true,
+        "test": true,
+        "arc-gen": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# Example ARC task snippets live here for offline reference.
+# The main entry point loads from DATASET_DIR in main.py by default.
