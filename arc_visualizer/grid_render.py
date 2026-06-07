@@ -26,6 +26,9 @@ ARC_COLORS = [
 
 CMAP = ListedColormap(ARC_COLORS)
 
+BACKGROUND_COLOR = "#FFFFFF"
+CELL_COLOR = "#0074D9"
+
 
 def grid_to_array(grid: Grid) -> np.ndarray:
     return np.asarray(grid, dtype=np.int32)
@@ -53,12 +56,13 @@ def render_grid(
 
     for row in range(height):
         for col in range(width):
-            color_idx = int(arr[row, col]) % len(ARC_COLORS)
+            value = int(arr[row, col])
+            facecolor = BACKGROUND_COLOR if value == 0 else CELL_COLOR
             rect = Rectangle(
                 (col * cell_size, row * cell_size),
                 cell_size * (1 - gap * 0.5),
                 cell_size * (1 - gap * 0.5),
-                facecolor=ARC_COLORS[color_idx],
+                facecolor=facecolor,
                 edgecolor="#333333",
                 linewidth=0.6,
             )

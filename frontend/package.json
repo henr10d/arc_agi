@@ -1,0 +1,24 @@
+{
+  "name": "neurogolf-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "CHOKIDAR_USEPOLLING=1 vite --host 127.0.0.1 --clearScreen false",
+    "dev:native-watch": "vite --host 127.0.0.1 --clearScreen false",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "4.3.3",
+    "vite": "5.4.11",
+    "typescript": "5.6.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "reactflow": "11.11.4"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1"
+  }
+}
